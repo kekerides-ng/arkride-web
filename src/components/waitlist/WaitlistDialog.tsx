@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { useJoinWaitlist } from "@/hooks/useJoinWaitlist";
 import { track } from "@/lib/analytics";
@@ -492,7 +493,10 @@ function WaitlistPanel({
         <div className="flex flex-col gap-3">
           <SubmitButton pending={mutation.isPending} />
           <p className="text-center font-(family-name:--font-geist) text-[12px] leading-[17px] text-[#767676]">
-            We’ll only use your details to tell you about Ark Ride.
+            We use your details to manage the waitlist and share Ark Ride updates.{" "}
+            <Link href="/privacy-policy" className="font-medium text-black underline underline-offset-2 hover:text-[#8A6A12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+              Privacy policy
+            </Link>
           </p>
         </div>
       </form>

@@ -87,7 +87,16 @@ export function RegisterForm() {
             required
           />
           <span className="text-sm leading-relaxed text-text-muted">
-            I agree to the Arkride terms of service and privacy policy.
+            I agree to the Arkride terms of service and{" "}
+            <Link
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-text underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              privacy policy
+            </Link>
+            .
           </span>
         </label>
         {state.fieldErrors?.acceptTerms && (

@@ -69,6 +69,9 @@ export function Footer() {
           <p className="text-sm text-text-subtle">
             © {new Date().getFullYear()} ArkRide. Lagos, Nigeria.
           </p>
+          <Link href="/privacy-policy" className="text-sm text-text-subtle underline underline-offset-4 hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+            Privacy policy
+          </Link>
           <p className="text-sm text-text-subtle">
             Emergencies: dial 112 or use SOS in the app.
           </p>

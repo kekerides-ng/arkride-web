@@ -253,9 +253,12 @@ export default function WaitlistPage() {
           </div>
 
           {/* Sits on the black footer, not the strip image below it — level with the badges but pinned to the far left, matching the header logo's left offset. */}
-          <p className="mt-8 font-(family-name:--font-geist) text-[16px] leading-[26.4px] font-medium whitespace-nowrap text-white xl:absolute xl:top-[103px] xl:left-[79.14px] xl:mt-0">
-            @ 2026 - All rights reserved.
-          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 font-(family-name:--font-geist) text-[14px] leading-[26.4px] font-medium text-white xl:absolute xl:top-[103px] xl:left-[79.14px] xl:mt-0 xl:justify-start xl:text-[16px]">
+            <span className="whitespace-nowrap">@ 2026 - All rights reserved.</span>
+            <Link href="/privacy-policy" className="whitespace-nowrap underline decoration-[#FEEE8F] underline-offset-4 transition-colors hover:text-[#FEEE8F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              Privacy policy
+            </Link>
+          </div>
         </div>
 
         {/*
